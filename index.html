@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Day Gift</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#mymessage" class="logo">11<span>41</span></a>
+        <nav class="navbar">
+            <a href="#mymessage" class="active">My Message</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <button onclick="playAudio()" class="image-button">
+            <audio id="myAudio" src="CityGirl.mp3"></audio>
+            <img src="image.png" alt="Teacher's Day Gift">
+        </button>
+        </div>
+
+        <div class="home-content">
+            <h1>Ana <span>Marie</span></h1>
+            <h3 class="text-animation"><span></span></h3>
+            <p>Hello<br><br> I just want to keep in touch with u, it's been a while.<br><br> Happy Teacher's Day Ma'am Ana, continue to discover every edge aspects of teaching. Im so amaze on what you've done at your very young age.<br><br>If ever mag tatake kana ng licensure exam for teachers, im rooting for u and 
+                i hope na ma-achieve mo ung mga goals mo.<br><br>At kung totoo man ung balak mo na mag change career or mag try sa different field im always here to support u even though through chats palang kita nakaka-usap sa mga ganoong bagay, i know you're capable kung saan ka man mapuntang field.<br><br>I hope you're doing well, And if u need ears consider me as someone u can rant to, im ur little reminder that u are appreciated and valued.<br><br>Keep slaying, thank you for being my inspiration.<br><br>Goodmorning!💜<br>Mag ingat ka sa pagpasok at pag-uwi, palagi.</p>
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/xolovesannash"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/xolovesannash/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.tiktok.com/@xolovesannashhhhhhh"><i class='bx bxl-tiktok'></i></a>
+            </div>
+
+            <a href="https://www.instagram.com/riesrench/" class="btn">Sincerely, Kenneth</a>
+        </div>
+
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+              <p>PLEASE CLICK THE PICTURE BEFORE READING!</p>
+              <button id="popup-close" class="popup-close-btn">Close</button>
+            </div>
+          </div>
+
+    </section>
+
+    <footer class="footer">
+        <p class="copyright">© riesrench ︱53712392</p>
+    </footer>
+
+    <script>
+        function playAudio() {
+            let audio = document.getElementById('myAudio');
+            audio.play().catch(error => {
+                console.log('Autoplay prevented or error occurred:', error);
+            });
+        }
+    </script>
+
+<script>
+    window.onload = function() {
+        // Show the popup when the page loads
+        const popup = document.getElementById("popup");
+        popup.style.display = "flex";
+
+        // Close popup on button click
+        const closeBtn = document.getElementById("popup-close");
+        closeBtn.addEventListener("click", function() {
+            popup.style.display = "none";
+        });
+    };
+</script>
+
+</body>
+</html>
